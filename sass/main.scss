@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
 
-@import "../node_modules/foundation-sites/scss/settings/settings";
+// @import "../node_modules/foundation-sites/scss/settings/settings";
 @import "customSettings.scss";
 @import "../node_modules/foundation-sites/scss/foundation.scss";
 
@@ -11,7 +11,7 @@
 @include foundation-typography;
 
 // Grids (choose one)
-@include foundation-xy-grid-classes;
+// @include foundation-xy-grid-classes;
 // @include foundation-grid;
 // @include foundation-flex-grid;
 
@@ -59,3 +59,45 @@
 // @include foundation-flex-classes;
 @include foundation-visibility-classes;
 // @include foundation-prototype-classes;
+
+body {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+#intro {
+  padding: 4rem;
+  background: $secondary-color;
+  color: $white;
+  text-align: center;
+  h3 {
+    font-weight: 700;
+    margin: $global-margin;
+  }
+  h6 {
+    margin: $global-margin;
+  }
+}
+
+aside {
+  background: $dark-gray;
+  nav {
+    margin-top: $global-margin;
+    header {
+      color: $white;
+    }
+    .menu li a {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+  }  
+}
+
+main {
+  section {
+    padding: $global-padding;
+    margin: $global-margin;
+    header {
+      font-size: 19px;
+    }
+  }
+}
