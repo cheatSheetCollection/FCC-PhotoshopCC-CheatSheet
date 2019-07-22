@@ -1,1 +1,1 @@
-FCC-Blender2.8CheatSheet
+FCC-PhotoshopCC-CheatSheet
